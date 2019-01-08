@@ -23,14 +23,10 @@ export default class BodyComponent extends Component {
   onClickEvent(e,data,form){
     e.preventDefault();
     console.log(data);
-    console.log(form);
-
   };
 
   onChange = (event, form) => {
-    console.log(form);
-    console.log(event.target.id);
-
+  
     const form1 = this.state[form];
     form1[event.target.id] = event.target.value
     this.setState({
